@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import Layout from '@/components/Layout';
 import OngoingProjects from '@/components/OngoingProjects';
 import InteracticeCaseStudies from '@/components/InteracticeCaseStudies';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -85,7 +84,7 @@ const CaseStudies = () => {
   };
 
   return (
-    <Layout>
+    <>
       <div className="bg-white section-spacing">
         <div className="container mx-auto px-4">
           {/* Header */}
@@ -189,7 +188,7 @@ const CaseStudies = () => {
           onClose={closeStudy}
         />
       )}
-    </Layout>
+    </>
   );
 };
 

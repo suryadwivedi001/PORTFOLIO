@@ -1,4 +1,3 @@
-import Layout from '@/components/Layout';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -83,7 +82,7 @@ const Resume = () => {
   ];
 
   return (
-    <Layout>
+    <>
       <div className="bg-white py-12">
         <div className="container mx-auto ">
           {/* Header */}
@@ -330,7 +329,7 @@ const Resume = () => {
           </div>
         </div>
       </div>
-    </Layout>
+    </>
   );
 };
 

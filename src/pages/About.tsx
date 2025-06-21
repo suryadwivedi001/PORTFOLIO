@@ -1,11 +1,8 @@
-
-import Layout from '@/components/Layout';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 
 const About = () => {
   return (
-    <Layout>
       <div className="bg-white pt-12 pb-16">
         <div className="container mx-auto px-4">
           {/* Hero Section */}
@@ -181,7 +178,6 @@ const About = () => {
           </div>
         </div>
       </div>
-    </Layout>
   );
 };
 

@@ -1,4 +1,3 @@
-import Layout from '@/components/Layout';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -262,7 +261,7 @@ const CaseStudyDetail = () => {
 
   if (!study) {
     return (
-      <Layout>
+      <>
         <div className="container mx-auto px-4 py-12">
           <div className="text-center">
             <h1 className="text-4xl font-bold mb-4">Case Study Not Found</h1>
@@ -272,12 +271,12 @@ const CaseStudyDetail = () => {
             </Button>
           </div>
         </div>
-      </Layout>
+      </>
     );
   }
 
   return (
-    <Layout>
+    <>
       <div className="portfolio-gradient py-12">
         <div className="container mx-auto px-4">
           {/* Header */}
@@ -480,7 +479,7 @@ const CaseStudyDetail = () => {
           </div>
         </div>
       </div>
-    </Layout>
+    </>
   );
 };
 
