@@ -1,0 +1,333 @@
+/* WCAG 2.1 AA Compliant Brand Theme with Proper Typography */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%; /* #FFFFFF */
+    --foreground: 0 0% 18%; /* #2F2F2F - Charcoal Grey */
+
+    --card: 0 0% 100%; /* #FFFFFF */
+    --card-foreground: 0 0% 18%; /* #2F2F2F */
+
+    --popover: 0 0% 100%; /* #FFFFFF */
+    --popover-foreground: 0 0% 18%; /* #2F2F2F */
+
+    --primary: 221 51% 16%; /* #14213D - Oxford Blue */
+    --primary-foreground: 0 0% 100%; /* #FFFFFF */
+
+    --secondary: 45 29% 97%; /* #FAF9F6 - Ivory White */
+    --secondary-foreground: 0 0% 18%; /* #2F2F2F */
+
+    --muted: 0 0% 97%; /* #F7F7F7 - Light Grey */
+    --muted-foreground: 0 0% 18%; /* #2F2F2F */
+
+    --accent: 250 60% 39%; /* #3C28A0 - Deep Blue */
+    --accent-foreground: 0 0% 100%; /* #FFFFFF */
+
+    --destructive: 0 84% 60%; /* #EF4444 */
+    --destructive-foreground: 0 0% 100%; /* #FFFFFF */
+
+    --border: 50 19% 81%; /* #D8D5C6 - Light Grey Border */
+    --input: 50 19% 81%; /* #D8D5C6 */
+    --ring: 221 51% 16%; /* #14213D - Oxford Blue */
+
+    --radius: 0.75rem; /* 12px */
+
+    --sidebar-background: 0 0% 100%; /* #FFFFFF */
+    --sidebar-foreground: 0 0% 18%; /* #2F2F2F */
+    --sidebar-primary: 221 51% 16%; /* #14213D */
+    --sidebar-primary-foreground: 0 0% 100%; /* #FFFFFF */
+    --sidebar-accent: 221 51% 16%; /* #14213D */
+    --sidebar-accent-foreground: 0 0% 100%; /* #FFFFFF */
+    --sidebar-border: 50 19% 81%; /* #D8D5C6 */
+    --sidebar-ring: 221 51% 16%; /* #14213D */
+  }
+
+  .dark {
+    --background: 221 51% 16%; /* #14213D */
+    --foreground: 0 0% 100%; /* #FFFFFF */
+    --card: 240 4% 16%; /* #27272A */
+    --card-foreground: 0 0% 100%; /* #FFFFFF */
+    --popover: 240 4% 16%; /* #27272A */
+    --popover-foreground: 0 0% 100%; /* #FFFFFF */
+    --primary: 221 51% 16%; /* #14213D */
+    --primary-foreground: 0 0% 100%; /* #FFFFFF */
+    --secondary: 240 4% 16%; /* #27272A */
+    --secondary-foreground: 0 0% 100%; /* #FFFFFF */
+    --muted: 217 19% 27%; /* #374151 */
+    --muted-foreground: 218 11% 65%; /* #9CA3AF */
+    --accent: 250 60% 39%; /* #3C28A0 */
+    --accent-foreground: 0 0% 100%; /* #FFFFFF */
+    --destructive: 0 72% 51%; /* #DC2626 */
+    --destructive-foreground: 0 0% 100%; /* #FFFFFF */
+    --border: 217 19% 27%; /* #374151 */
+    --input: 217 19% 27%; /* #374151 */
+    --ring: 221 51% 16%; /* #14213D */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-white text-foreground font-inter;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  /* Skip Link for Accessibility */
+  .skip-link {
+    @apply absolute left-0 top-0 bg-oxford-blue text-white px-4 py-2 text-sm font-medium rounded-br-md transform -translate-y-full focus:translate-y-0 transition-transform z-50;
+  }
+
+  /* WCAG Compliant Typography Scale */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-playfair text-oxford-blue;
+  }
+
+  h1 {
+    @apply text-5xl leading-tight font-bold;
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    color: #14213D;
+  }
+
+  h2 {
+    @apply text-4xl leading-tight font-bold;
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    color: #3C28A0;
+  }
+
+  h3 {
+    @apply text-3xl leading-tight font-semibold;
+    font-family: 'Inter', sans-serif;
+    color: #2F2F2F;
+  }
+
+  p, body {
+    @apply text-base leading-relaxed font-normal;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #2F2F2F;
+  }
+
+  small, .text-small {
+    @apply text-sm leading-normal font-medium;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #2F2F2F;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  /* Focus Indicators - WCAG 2.1 AA Compliant - FIXED: Remove yellow, use brand blue */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-oxford-blue ring-offset-2 ring-offset-white;
+    box-shadow: 0 0 0 3px rgba(20, 33, 61, 0.3) !important;
+    border-color: #14213D !important;
+  }
+
+  button:focus-visible,
+  a:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible,
+  select:focus-visible {
+    @apply outline-none ring-2 ring-oxford-blue ring-offset-2;
+    border-color: #14213D !important;
+    box-shadow: 0 0 0 3px rgba(20, 33, 61, 0.3) !important;
+  }
+
+  /* Override any default yellow focus states */
+  input:focus,
+  textarea:focus,
+  select:focus {
+    border-color: #14213D !important;
+    box-shadow: 0 0 0 3px rgba(20, 33, 61, 0.3) !important;
+    outline: none !important;
+  }
+}
+
+@layer components {
+  .brand-gradient {
+    @apply bg-white;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-oxford-blue to-deep-blue bg-clip-text text-transparent;
+  }
+
+  .brand-card {
+    @apply bg-white border border-light-grey-border shadow-sm rounded-xl p-6;
+  }
+
+  .brand-card-neutral {
+    @apply bg-ivory-white border border-light-grey-border shadow-sm rounded-xl p-6;
+  }
+
+  .hover-lift {
+    @apply relative shadow-md transition-transform duration-300 hover:-translate-y-[2px];
+    will-change: transform;
+  }    
+
+  .fade-in {
+    @apply animate-fade-in;
+  }
+
+  .scale-on-hover {
+    @apply transition-transform duration-300 hover:scale-[1.02];
+  }
+
+  .brand-shadow {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+
+  .brand-button-primary {
+    @apply border-2 border-oxford-blue bg-oxford-blue text-white hover:bg-oxford-blue/90 font-medium rounded-lg px-8 py-3 transition-all duration-200 uppercase tracking-wide shadow-sm min-h-[44px] min-w-[44px];
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+  }
+
+  .brand-button-primary:hover {
+    @apply shadow-md;
+  }
+
+  .brand-button-secondary {
+    @apply border-2 border-burnt-umber text-burnt-umber hover:bg-burnt-umber hover:text-white font-medium rounded-lg px-8 py-3 transition-all duration-200 uppercase tracking-wide min-h-[44px] min-w-[44px];
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+  }
+
+  .brand-input {
+    @apply border border-light-grey-border bg-white rounded-lg px-4 py-3 text-base ring-offset-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oxford-blue transition-colors min-h-[44px];
+    border-color: #D8D5C6 !important;
+  }
+
+  .brand-input:focus {
+    border-color: #14213D !important;
+    box-shadow: 0 0 0 3px rgba(20, 33, 61, 0.3) !important;
+  }
+
+  .glass-card {
+    @apply bg-white/95 backdrop-blur-sm border border-light-grey-border shadow-sm;
+  }
+
+  /* Mobile Touch Targets - 44px minimum */
+  .touch-target {
+    @apply min-h-[44px] min-w-[44px];
+  }
+
+  /* Navigation active state */
+  .nav-active {
+    @apply border-b-2 border-burnt-umber font-semibold;
+    color: #935D3B;
+  }
+
+  /* Section spacing consistency */
+  .section-spacing {
+    @apply py-12;
+  }
+}
+
+@layer utilities {
+  .font-inter {
+    font-family: 'Inter', sans-serif;
+  }
+
+  .font-playfair {
+    font-family: 'Playfair Display', serif;
+  }
+
+  /* Custom color utilities */
+  .text-oxford-blue { color: #14213D; }
+  .text-deep-blue { color: #3C28A0; }
+  .text-charcoal-grey { color: #2F2F2F; }
+  .text-burnt-umber { color: #935D3B; }
+  
+  .bg-oxford-blue { background-color: #14213D; }
+  .bg-deep-blue { background-color: #3C28A0; }
+  .bg-ivory-white { background-color: #FAF9F6; }
+  .bg-light-grey { background-color: #F7F7F7; }
+  .bg-burnt-umber { background-color: #935D3B; }
+  
+  .border-light-grey-border { border-color: #D8D5C6; }
+  .border-burnt-umber { border-color: #935D3B; }
+  .border-oxford-blue { border-color: #14213D; }
+
+  /* 8pt Grid System */
+  .spacing-1 { @apply p-2; }
+  .spacing-2 { @apply p-4; }
+  .spacing-3 { @apply p-6; }
+  .spacing-4 { @apply p-8; }
+  .spacing-5 { @apply p-10; }
+  .spacing-6 { @apply p-12; }
+
+  /* Screen Reader Only */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+}
+
+/* Custom animations */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.6s ease-out;
+}
+
+.animate-slide-up {
+  animation: slide-up 0.8s ease-out;
+}
+
+.animate-delay-200 {
+  animation-delay: 200ms;
+}
+
+.animate-delay-400 {
+  animation-delay: 400ms;
+}
+
+.margin-dot {
+  margin-top: 4px;
+}
+
+[data-component-file="CaseStudies.tsx"] [data-component-file="OngoingProjects.tsx"][data-component-name="section"] {
+  padding-top: 0;
+}
