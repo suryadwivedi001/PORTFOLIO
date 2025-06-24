@@ -9,6 +9,9 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 
+// ✅ New: Import blog posts from JSON
+import blogPosts from "@/data/blogs.json";
+
 interface BlogPost {
   id: string;
   title: string;
@@ -22,18 +25,6 @@ interface BlogPost {
 }
 
 const Blog = () => {
-  const blogData = import.meta.env.VITE_BLOG;
-  let blogPosts: BlogPost[] = [];
-
-  try {
-    if (blogData) {
-      blogPosts = JSON.parse(blogData);
-    }
-  } catch (error) {
-    console.error("Invalid blog data in env:", error);
-    blogPosts = [];
-  }
-
   return (
     <div className="bg-white section-spacing">
       <div className="container mx-auto px-4">
@@ -89,9 +80,6 @@ const Blog = () => {
                 <p className="text-lg text-charcoal-grey mb-4 font-inter">
                   {blogPosts[0].subtitle}
                 </p>
-                {/* <p className="text-charcoal-grey mb-6 font-inter">
-                    {blogPosts[0].excerpt}
-                  </p> */}
                 <div className="flex items-center justify-between mb-6 text-sm text-charcoal-grey font-inter">
                   <span>
                     {new Date(blogPosts[0].publishedAt).toLocaleDateString()}
@@ -141,7 +129,6 @@ const Blog = () => {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                {/* <p className="text-sm text-charcoal-grey mb-4">{post.excerpt}</p> */}
                 <div className="flex items-center justify-between mb-4 text-sm text-charcoal-grey">
                   <span>{new Date(post.publishedAt).toLocaleDateString()}</span>
                   <span>{post.readTime}</span>

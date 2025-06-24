@@ -5,75 +5,40 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Link } from 'react-router-dom';
+import caseStudiesData from '@/data/caseStudies.json'; // ✅ Import your JSON directly
+
+interface AllCaseStudies {
+  id: string;
+  title: string;
+  subtitle: string;
+  tags: string[];
+  duration: string;
+  team: string;
+  outcome: string;
+  image: string;
+  overview: string;
+  problem: string;
+  research: string[];
+  personas: {
+    name: string;
+    description: string;
+    goals: string[];
+    frustrations: string[];
+  }[];
+  solution: string[];
+  results: string[];
+  featured: boolean;
+}
 
 const CaseStudies = () => {
-  const [selectedStudy, setSelectedStudy] = useState<any>(null);
+  const [selectedStudy, setSelectedStudy] = useState<AllCaseStudies | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const allCaseStudies = [
-    {
-      id: 'wipro-credit-origination',
-      title: 'Credit Card Origination Platform',
-      description: 'End-to-end credit card origination workflow including KYC, fraud checks, and credit scoring for B2B SaaS financial platform at Wipro Gallagher Solutions.',
-      tags: ['B2B SaaS', 'Credit Risk', 'KYC Integration'],
-      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop',
-      outcome: 'Increased loan volume by 30%',
-      duration: '6 months',
-      featured: true
-    },
-    {
-      id: 'genai-lending',
-      title: 'GenAI Real Estate Lending',
-      description: 'Integrated Generative AI for real estate recommendations and credit risk analysis, leveraging ChatGPT and LangChain for automated decision-making.',
-      tags: ['GenAI Integration', 'Real Estate', 'Credit Analysis'],
-      image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop',
-      outcome: 'Boosted loan closure rates by 30%',
-      duration: '4 months',
-      featured: true
-    },
-    {
-      id: 'demo-optimization',
-      title: 'Product Demo Acceleration',
-      description: 'Streamlined B2B SaaS product demo processes and reduced time-to-market through strategic workflow optimization and stakeholder alignment.',
-      tags: ['Process Optimization', 'B2B SaaS', 'Time-to-Market'],
-      image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=600&fit=crop',
-      outcome: 'Reduced demo TAT from 6-9 months to 1 month',
-      duration: '3 months',
-      featured: true
-    },
-    {
-      id: 'lexis-nexis-integration',
-      title: 'Third-Party KYC Integration',
-      description: 'Led integration with Lexis Nexis, Experian PID, and CrossCore for comprehensive KYC and fraud prevention in lending workflows.',
-      tags: ['KYC', 'Integration', 'Fraud Prevention'],
-      image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&h=600&fit=crop',
-      outcome: 'Enhanced fraud detection accuracy by 40%',
-      duration: '5 months',
-      featured: false
-    },
-    {
-      id: 'netoxygen-portal',
-      title: 'NetOxygen Launchpad Admin Portal',
-      description: 'Optimized internal tooling and processes to enhance developer efficiency and streamline product development workflows.',
-      tags: ['Internal Tools', 'Developer Experience', 'Process Optimization'],
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop',
-      outcome: 'Increased developer efficiency by 20%',
-      duration: '4 months',
-      featured: false
-    },
-    {
-      id: 'ovis-crm',
-      title: 'Ovis CRM for Fitness Coaches',
-      description: 'Built comprehensive CRM platform for fitness trainers from scratch, including client management, workout planning, and business analytics.',
-      tags: ['CRM', 'Fitness Tech', 'Startup'],
-      image: 'https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=800&h=600&fit=crop',
-      outcome: 'Successfully launched MVP with 50+ fitness coaches',
-      duration: '8 months',
-      featured: false
-    }
-  ];
+  const allCaseStudies: AllCaseStudies[] = [...caseStudiesData].sort(
+    (a, b) => Number(b.featured) - Number(a.featured)
+  );
 
-  const openStudy = (study: any) => {
+  const openStudy = (study: AllCaseStudies) => {
     setSelectedStudy(study);
     setIsModalOpen(true);
   };
@@ -101,14 +66,14 @@ const CaseStudies = () => {
           {/* Case Studies Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
             {allCaseStudies.map((study, index) => (
-              <Card 
-                key={study.id} 
-                className={`hover-lift animate-fade-in cursor-pointer group h-full flex flex-col bg-white border border-light-grey-border shadow-sm rounded-xl`} 
-                style={{animationDelay: `${index * 200}ms`}}
+              <Card
+                key={study.id}
+                className={`hover-lift animate-fade-in cursor-pointer group h-full flex flex-col bg-white border border-light-grey-border shadow-sm rounded-xl`}
+                style={{ animationDelay: `${index * 200}ms` }}
               >
                 <div className="aspect-video overflow-hidden rounded-t-lg">
-                  <img 
-                    src={study.image} 
+                  <img
+                    src={study.image}
                     alt={study.title}
                     className="w-full h-full object-cover scale-on-hover"
                   />
@@ -124,10 +89,12 @@ const CaseStudies = () => {
                       </Badge>
                     ))}
                   </div>
-                  <CardTitle className="group-hover:text-burnt-umber transition-colors font-inter font-bold text-charcoal-grey">
+                  <CardTitle className="mb-2 group-hover:text-burnt-umber transition-colors font-inter font-bold text-charcoal-grey">
                     {study.title}
                   </CardTitle>
-                  <CardDescription className="flex-1 text-charcoal-grey font-inter">{study.description}</CardDescription>
+                  <CardDescription className="flex-1 text-charcoal-grey font-inter">
+                    {study.subtitle}
+                  </CardDescription>
                 </CardHeader>
                 <CardContent className="pt-0">
                   <div className="space-y-3">
@@ -138,12 +105,14 @@ const CaseStudies = () => {
                     <div className="text-sm font-medium text-burnt-umber font-inter">
                       {study.outcome}
                     </div>
-                    <Button 
-                      onClick={() => openStudy(study)}
-                      variant="outline" 
+                    <Button
+                      asChild
+                      variant="outline"
                       className="w-full mt-4"
                     >
-                      View Full Case Study
+                      <Link to={`/case-studies/${study.id}`}>
+                        View Full Case Study
+                      </Link>
                     </Button>
                   </div>
                 </CardContent>
@@ -153,12 +122,12 @@ const CaseStudies = () => {
         </div>
       </div>
 
-      {/* Ongoing Projects Section */}
+      {/* Ongoing Projects */}
       <div className="bg-ivory-white">
         <OngoingProjects />
       </div>
 
-      {/* CTA Section - Fixed spacing and colors */}
+      {/* CTA */}
       <div className="bg-white" style={{ paddingTop: '40px', paddingBottom: '80px' }}>
         <div className="container mx-auto px-4">
           <div className="text-center">
@@ -180,7 +149,7 @@ const CaseStudies = () => {
         </div>
       </div>
 
-      {/* Interactive Case Study Modal */}
+      {/* Case Study Modal */}
       {selectedStudy && (
         <InteracticeCaseStudies
           study={selectedStudy}

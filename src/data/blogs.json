@@ -1,0 +1,33 @@
+[
+  {
+    "id": "agile-scrum-ai-pm",
+    "title": "How to Use Agile & Scrum in AI Product Management",
+    "subtitle": "Adapting traditional methodologies for the unique challenges of AI product development",
+    "excerpt": "<h3>Why Agile is a Good Fit for AI Projects</h3><p>AI projects involve uncertainty, evolving requirements, and experimental research. Agile helps by offering:</p><ul><li><strong>Iterative development:</strong> Frequent model updates and experiments.</li><li><strong>Stakeholder feedback:</strong> Aligns AI outputs with business needs.</li><li><strong>Early delivery:</strong> Deliver MVPs to collect data or validate ideas.</li><li><strong>Risk management:</strong> De-risk complex model development in small increments.</li></ul><h3>Scrum Roles Adapted for AI Teams</h3><p>Scrum roles reimagined for AI product teams:</p><table border=\"1\" cellpadding=\"6\" cellspacing=\"0\"><thead><tr><th>Scrum Role</th><th>AI Team Equivalent</th></tr></thead><tbody><tr><td><strong>Product Owner</strong></td><td>Defines backlog, prioritizes experiments, bridges business and data science.</td></tr><tr><td><strong>Scrum Master</strong></td><td>Facilitates agile rituals, removes blockers, fosters collaboration.</td></tr><tr><td><strong>Development Team</strong></td><td>Comprises data scientists, ML engineers, backend/frontend devs, and analysts.</td></tr></tbody></table><h3>Scrum in AI Product Development</h3><p>Scrum in AI should adapt for model experimentation and data exploration:</p><ol><li><strong>Sprint Planning:</strong> Identify backlog items like preprocessing, model training, etc.</li><li><strong>Daily Stand-ups:</strong> Discuss blockers like low data quality or training issues.</li><li><strong>Sprint Reviews:</strong> Demo metrics, model insights, or feature outputs.</li><li><strong>Retrospectives:</strong> Improve based on data drift, model failure, or deployment delays.</li></ol><h3>Managing AI Backlogs</h3><p>AI backlogs should include research, uncertainty handling, and model tasks:</p><ul><li>Include <strong>spikes</strong> for research or unknowns.</li><li>Define <strong>clear acceptance criteria</strong> like accuracy thresholds.</li><li>Use <strong>experimentation tickets</strong> for model comparisons.</li></ul><h3>Sample Sprint Backlog</h3><table border=\"1\" cellpadding=\"6\" cellspacing=\"0\"><thead><tr><th>Task</th><th>Type</th><th>Owner</th><th>Status</th></tr></thead><tbody><tr><td>Collect user clickstream data</td><td>Data</td><td>Data Engineer</td><td>In Progress</td></tr><tr><td>Train classification model</td><td>ML</td><td>ML Engineer</td><td>To Do</td></tr><tr><td>Hyperparameter tuning</td><td>Experiment</td><td>ML Engineer</td><td>To Do</td></tr><tr><td>Build prediction UI</td><td>Frontend</td><td>Web Dev</td><td>Done</td></tr></tbody></table><h3>Challenges & Solutions</h3><table border=\"1\" cellpadding=\"6\" cellspacing=\"0\"><thead><tr><th>Challenge</th><th>Solution</th></tr></thead><tbody><tr><td>Unclear model KPIs</td><td>Define business-aligned metrics like precision, recall.</td></tr><tr><td>Variable data quality</td><td>Include data validation and audits in sprints.</td></tr><tr><td>Slow training times</td><td>Plan experiments around compute schedules.</td></tr><tr><td>Cross-functional gaps</td><td>Encourage communication via daily standups and shared docs.</td></tr></tbody></table><h3>Best Practices</h3><ul><li><strong>Align vision:</strong> Connect sprint tasks to AI goals.</li><li><strong>Involve stakeholders:</strong> Validate outputs regularly.</li><li><strong>Track experiments:</strong> Use MLflow or Weights & Biases.</li><li><strong>Focus on explainability:</strong> Integrate SHAP, LIME early on.</li></ul><h3>Conclusion</h3><p>Agile and Scrum provide adaptable, iterative frameworks to build, test, and scale AI products. By tailoring ceremonies and roles, teams can better manage complexity, improve collaboration, and deliver smarter outcomes.</p>",
+    "tags": ["AI", "Agile", "Product Management", "Scrum"],
+    "publishedAt": "2024-01-15",
+    "readTime": "12 min read",
+    "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=400&fit=crop",
+    "featured": true
+  },
+  {
+    "id": "ai-mvp-failures",
+    "title": "The Real Reason Your AI MVP Fails — And How to Fix It",
+    "subtitle": "Common pitfalls in AI product development and practical solutions to avoid them",
+    "excerpt": "Most AI MVPs fail not because of bad technology, but due to poor product strategy. Discover the common mistakes and learn how to create small wins with explainable results and success metrics.",
+    "tags": ["AI", "MVP", "Product Strategy", "Startup"],
+    "publishedAt": "2024-01-10",
+    "readTime": "10 min read",
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop"
+  },
+  {
+    "id": "prompt-to-product",
+    "title": "From Prompt to Product: How I Built and Deployed AI Agents Without Code",
+    "subtitle": "A practical guide to building production-ready AI agents using no-code tools",
+    "excerpt": "Learn how to transform ChatGPT experiments into business value using LangChain, OpenAI APIs, and tools like Lovable.dev to ship AI prototypes rapidly.",
+    "tags": ["AI Agents", "LangChain", "No-Code", "OpenAI"],
+    "publishedAt": "2024-01-05",
+    "readTime": "15 min read",
+    "image": "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800&h=400&fit=crop"
+  }
+]

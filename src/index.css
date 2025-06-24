@@ -331,3 +331,7 @@
 [data-component-file="CaseStudies.tsx"] [data-component-file="OngoingProjects.tsx"][data-component-name="section"] {
   padding-top: 0;
 }
+
+.prose :where(tbody td:first-child, tfoot td:first-child, thead th:first-child):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+  padding-inline-start: 0.75em !important; /* or 0.75rem as preferred */
+}
