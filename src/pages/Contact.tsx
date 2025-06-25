@@ -4,6 +4,10 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Mail, Phone, Linkedin, Github, Clock } from 'lucide-react';
 import { useState } from 'react';
+import emailjs from '@emailjs/browser';
+const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -25,20 +29,35 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
-    const emailBody = `
-Name: ${formData.firstName} ${formData.lastName}
-Email: ${formData.email}
-Company: ${formData.company}
-Subject: ${formData.subject}
 
-Message:
-${formData.message}
-    `.trim();
+    const templateParams = {
+      from_name: `${formData.firstName} ${formData.lastName}`,
+      reply_to: formData.email,
+      subject: formData.subject,
+      company: formData.company,
+      message: formData.message
+    };
 
-    const mailtoLink = `mailto:surya.dwivedi01@outlook.com?subject=${encodeURIComponent(formData.subject || 'Contact Form Submission')}&body=${encodeURIComponent(emailBody)}`;
-    
-    window.location.href = mailtoLink;
+    emailjs
+      .send(serviceId, templateId, templateParams, publicKey) // replace these values
+      .then(
+        (result) => {
+          console.log('Email successfully sent:', result.text);
+          alert('Message sent successfully!');
+          setFormData({
+            firstName: '',
+            lastName: '',
+            email: '',
+            company: '',
+            subject: '',
+            message: ''
+          });
+        },
+        (error) => {
+          console.error('EmailJS Error:', error);
+          alert('Failed to send message. Please try again later.');
+        }
+      );
   };
 
   return (
