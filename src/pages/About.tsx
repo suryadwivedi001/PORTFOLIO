@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
+import { Download } from 'lucide-react';
 
 const About = () => {
   return (
@@ -15,6 +16,17 @@ const About = () => {
               Currently driving innovation at Wipro Gallagher Solutions through strategic GenAI integration 
               and product excellence.
             </p>
+            <a href="/resume.pdf" download="Surya_Prakash_Dwivedi_Resume.pdf">
+             <Button 
+              size="lg" 
+              className="border-2 border-oxford-blue bg-oxford-blue text-white hover:bg-oxford-blue/90 font-medium rounded-lg px-8 py-3 transition-all duration-200 uppercase tracking-wide shadow-sm min-h-[44px] min-w-[44px]"
+              aria-label="Download Surya's resume as PDF"
+            >
+              <Download className="mr-2 h-4 w-4" aria-hidden="true" />
+              Download Resume
+            </Button>
+            </a>
+            
           </div>
 
           {/* Main Content */}
