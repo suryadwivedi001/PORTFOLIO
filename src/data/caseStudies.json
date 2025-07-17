@@ -2,6 +2,7 @@
   {
     "id":"streetkhana",
     "title": "StreetKhana: AI-Powered Food Discovery",
+    "pdfSrc": "StreetKhana_Case_Study.pdf",
     "subtitle": "Connecting food lovers with authentic street vendors through intelligent recommendations",
     "tags": ["AI Product", "Mobile App", "Location Services", "User research"],
     "duration": "3 months",
@@ -9,46 +10,13 @@
     "outcome": "Increased vendor discovery by 65%",
     "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&h=600&fit=crop",
     "overview": "StreetKhana aimed to solve the discovery problem for street food enthusiasts by creating an AI-powered platform that connects users with local vendors based on preferences, location, and real-time availability.",
-    "problem": "Street food lovers struggled to discover new vendors and authentic local cuisine. Existing food apps focused primarily on restaurants, leaving a gap in the street food market. Users had no reliable way to find quality street vendors nearby or discover new authentic cuisines.",
-    "research": [
-      "Conducted 50+ user interviews with street food enthusiasts",
-      "Analyzed competitor landscape and identified market gaps",
-      "Surveyed 200+ street food vendors about their challenges",
-      "Created detailed user personas and journey maps"
-    ],
-    "personas": [
-      {
-        "name": "Food Explorer Maya",
-        "description": "Young professional who loves discovering authentic local cuisine",
-        "goals": ["Find new street vendors", "Ensure food quality", "Save time searching"],
-        "frustrations": ["Unreliable vendor information", "Language barriers", "Safety concerns"]
-      },
-      {
-        "name": "Busy Professional Raj",
-        "description": "Working professional looking for quick, quality street food",
-        "goals": ["Fast service", "Consistent quality", "Convenient locations"],
-        "frustrations": ["Long queues", "Unpredictable timing", "Limited payment options"]
-      }
-    ],
-    "solution": [
-      "AI-powered recommendation engine based on taste preferences and past orders",
-      "Real-time vendor tracking with live availability status",
-      "Integrated rating system with photo reviews from customers",
-      "Multi-language support for diverse vendor base",
-      "Secure payment integration with digital wallet support"
-    ],
-    "results": [
-      "65% increase in vendor discovery rate",
-      "40% improvement in user retention after first week",
-      "3.2x increase in average session duration",
-      "85% user satisfaction score in post-launch surveys",
-      "150+ vendors onboarded in first month"
-    ],
+    "problem": "India is home to an estimated 2 million street food vendors, offering a rich and diverse culinary experience across cities and towns. Despite the widespread love for street food, people often struggle to discover the best and most hygienic options nearby—especially when craving local specialties or traveling to a new city. This highlights a significant discovery gap in the street food ecosystem. To bridge this gap, we envision building a street food finder app that enables users to seamlessly explore, locate, and engage with top-rated street vendors based on their location, preferences, and real-time availability. To develop an outstanding product that street food lovers genuinely value, we must first understand the market landscape—mapping key players, vendors, and competitors, and assessing current solutions. From there, we will form hypotheses around the ideal product experience, conduct both user and competitor research to validate assumptions, and identify distinct user segments along with their pain points. Based on user personas, we’ll design and prioritize features, define the MVP scope, outline a high-level system design, and create wireframes with intuitive UI/UX. We will map the end-to-end user journey, define measurable success metrics including a north star and supporting KPIs, and structure a viable monetization plan. Finally, we’ll identify potential risks—such as vendor onboarding challenges or user trust—and propose mitigation strategies to ensure the long-term success of the product.",
     "featured": false
   },
   {
     "id":"hinge-ratings",
     "title": "Hinge App Store Ratings Recovery",
+    "pdfSrc": "Hinge_Case_Study.pdf",
     "subtitle": "Strategic UX intervention to recover from declining app store ratings",
     "tags": ["UX Strategy", "App Store Optimization", "Growth", "A/B Testing"],
     "duration": "2 months",
@@ -57,39 +25,12 @@
     "image": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=1200&h=600&fit=crop",
     "overview": "Hinge faced declining app store ratings due to user experience issues in their onboarding flow and matching algorithm. This case study details the systematic approach to identifying and resolving core user friction points.",
     "problem": "Hinge app ratings had declined to 2.8 stars with users complaining about poor matching quality, complicated onboarding, and lack of meaningful connections. The declining ratings were affecting organic discovery and user acquisition.",
-    "research": [
-      "Analyzed 1000+ negative app store reviews to identify patterns",
-      "Conducted usability testing with 30 users on current onboarding flow",
-      "Deep-dive analytics review of user drop-off points",
-      "Competitive analysis of dating app onboarding experiences"
-    ],
-    "personas": [
-      {
-        "name": "Sarah, 28",
-        "description": "Marketing professional looking for serious relationships",
-        "goals": ["Find meaningful connections", "Efficient matching", "Safe platform"],
-        "frustrations": ["Poor match quality", "Complex profile setup", "Spam messages"]
-      }
-    ],
-    "solution": [
-      "Simplified onboarding flow reducing steps from 12 to 6",
-      "Enhanced matching algorithm with better preference weighting",
-      "Introduced smart prompts to improve profile quality",
-      "Implemented feedback loops for match quality improvement",
-      "Added safety features and improved reporting mechanisms"
-    ],
-    "results": [
-      "App store rating improved from 2.8 to 4.2 stars",
-      "45% reduction in onboarding abandonment",
-      "30% increase in daily active users",
-      "25% improvement in first-week retention",
-      "60% increase in meaningful conversations (measured by message length and response rate)"
-    ],
     "featured": false
   },
   {
     "id": "bookmyshow",
     "title": "BookMyShow Ticketing UX Redesign",
+    "pdfSrc": "BookMyShow_CaseStudy.pdf",
     "subtitle": "Optimizing high-demand event booking flow for better conversion",
     "tags": ["UX Design", "Conversion Optimization", "High Traffic", "Performance"],
     "duration": "4 months",
@@ -98,34 +39,6 @@
     "image": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=1200&h=600&fit=crop",
     "overview": "BookMyShow needed to optimize their ticket booking flow for high-demand events where server load and user urgency created friction points that led to booking abandonment and user frustration.",
     "problem": "During high-demand events, BookMyShow experienced significant booking abandonment due to slow loading times, complex navigation, and unclear seat availability. Users were frustrated with the multi-step process during peak traffic periods.",
-    "research": [
-      "Performance analysis during 10 high-demand events",
-      "User session recordings analysis of abandoned bookings",
-      "Heat map analysis of booking flow pages",
-      "Customer service ticket analysis for booking-related issues"
-    ],
-    "personas": [
-      {
-        "name": "Concert Fan David",
-        "description": "Music enthusiast trying to book tickets for popular concerts",
-        "goals": ["Secure good seats", "Quick booking process", "Reliable platform"],
-        "frustrations": ["Website crashes", "Losing selected seats", "Payment failures"]
-      }
-    ],
-    "solution": [
-      "Progressive loading with skeleton screens for better perceived performance",
-      "Seat hold timer with clear countdown to create urgency without pressure",
-      "One-click checkout for returning users with saved payment methods",
-      "Real-time seat availability updates to prevent false hope",
-      "Fallback options when preferred shows are sold out"
-    ],
-    "results": [
-      "40% reduction in booking abandonment rate",
-      "25% faster average booking completion time",
-      "50% reduction in customer service tickets related to booking issues",
-      "35% increase in mobile conversion rate",
-      "20% improvement in overall customer satisfaction scores"
-    ],
     "featured": false
   },
   {

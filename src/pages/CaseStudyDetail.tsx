@@ -31,7 +31,7 @@ const CaseStudyDetail = () => {
     <div className="portfolio-gradient py-12">
       <div className="container mx-auto px-4">
         {/* Header */}
-        <div className="max-w-4xl mx-auto mb-12">
+        <div className="max-w-6xl mx-auto mb-12">
           <div className="mb-6">
             <Button asChild variant="outline" className="mb-6">
               <Link to="/case-studies">← Back to Case Studies</Link>
@@ -83,7 +83,7 @@ const CaseStudyDetail = () => {
         </div>
 
         {/* Content */}
-        <div className="max-w-4xl mx-auto space-y-16">
+        <div className="max-w-6xl mx-auto space-y-16">
           {study.overview && (
             <section>
               <h2 className="text-3xl font-dm-sans font-extrabold mb-6">
@@ -161,8 +161,30 @@ const CaseStudyDetail = () => {
                   </div>
                 )}
               </div>
+              
             </section>
           )}
+
+          {/* ✅ PDF IFrame if available */}
+              {study.pdfSrc && (
+                <section>
+                  <div className="max-w-6xl mx-auto mb-16">
+                  <h2 className="text-3xl font-dm-sans font-extrabold mb-6">
+                 Solution <span className="text-gradient"> Walkthrough</span>
+              </h2>
+                  <div className="aspect-[4/3] rounded-lg overflow-hidden border border-muted shadow-md">
+                    <iframe
+                      src={study.pdfSrc + "#toolbar=0&navpanes=0&scrollbar=0"}
+                      width="100%"
+                      height="600"
+                      className="w-full h-full"
+                      title={`${study.title} Case Study PDF`}
+                    />
+                  </div>
+                </div> 
+                </section>
+                
+              )}
 
           {study.solution && (
             <section>

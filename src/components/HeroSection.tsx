@@ -51,11 +51,12 @@ const HeroSection = () => {
             <div className="flex flex-wrap justify-center gap-3">
               {[
                 'ChatGPT & LangChain',
+                'Figma & Balsamiq',
+                'User Experience Design',
                 'Python & SQL',
                 'B2B SaaS Products',
                 'Credit Risk Analysis',
                 'Agile & Scrum',
-                'Figma & Balsamiq',
                 'GenAI Integration',
                 'Lending Technology'
               ].map((skill) => (
