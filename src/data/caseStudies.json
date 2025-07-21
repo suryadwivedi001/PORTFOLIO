@@ -83,39 +83,77 @@
     "featured": false
   },
   {
-    "id": "wipro-credit-origination",
-    "title": "Credit Card Origination Platform",
-    "subtitle": "Automating credit card approvals with integrated KYC, fraud checks and scoring",
-    "tags": ["B2B SaaS", "Credit Risk", "KYC Integration"],
-    "duration": "6 months",
-    "team": "Product Manager, Frontend Developer, AI Engineer, UX Designer",
-    "outcome": "Increased loan volume by 30%",
-    "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop",
-    "problem": "Manual approval workflows created bottlenecks in customer onboarding, risk assessment, and fraud prevention.",
-    "research": [
-      "Interviewed 25 credit officers and compliance heads",
-      "Audited legacy systems for latency and failure points",
-      "Benchmarked top B2B fintechs' origination flow"
-    ],
-    "personas": [
-      {
-        "name": "Neha, Credit Officer",
-        "description": "Manages daily approvals of new credit card applicants",
-        "goals": ["Reduce manual reviews", "Ensure compliance", "Minimize risk"],
-        "frustrations": ["Paper-based documentation", "Duplicate applications", "Ambiguous fraud signals"]
-      }
-    ],
-    "solution": [
-      "Integrated APIs for Lexis Nexis and Experian KYC validation",
-      "Rule-based engine for risk-based application routing",
-      "ML scoring model for high-volume automated approvals"
-    ],
-    "results": [
-      "30% improvement in decision turnaround time",
-      "20% drop in fraudulent application rate",
-      "40% higher application throughput per officer"
-    ],
-    "featured": true
+  "id": "credit-card-origination-platform",
+  "title": "Case Study: Credit Card Origination Platform – End-to-End Flow",
+  "pdfSrc": "Credit Card Origination Platform.pdf",
+  "subtitle": "Building a modular, real-time credit card origination solution on top of legacy LOS",
+  "tags": [
+    "Credit Cards",
+    "Loan Origination",
+    "Digital Banking",
+    "Risk Engine",
+    "Microservices"
+  ],
+  "duration": "6 months",
+  "team": "Associate Product Manager, Credit Risk Lead, Compliance Officer, Backend Engineers, Frontend Engineers, DevOps, UX Designer",
+  "outcome": "42% approval rate, sub‑15‑second decisions, 19% abandonment reduction",
+  "image": "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=1200&h=600&fit=crop",
+  "overview": "We extended our existing mortgage‑and‑consumer‑loan LOS (NetOxygen) with a microservices–based credit card origination platform. Features include a tiered credit decision engine, dynamic offer personalization, cross‑sell workflows, and full API integration for rapid product launches.",
+  "problem": "Our NetOxygen LOS was robust for mortgages and consumer loans but inflexible for credit card products and digital channels. Siloed processes led to high mobile abandonment (>60%), low approval rates (~23%), and 3+ week product launches.",
+  "research": [
+    "Analyzed funnel drop‑off points: bureau pull & offer selection steps",
+    "Benchmarked 5 challenger banks and fintechs on digital decisioning speed",
+    "Interviewed 30 risk and compliance stakeholders to map regulatory requirements",
+    "Studied legacy LOS integration patterns and migration constraints"
+  ],
+  "personas": [
+    {
+      "name": "Jordan, Digital Banking Customer",
+      "description": "A tech‑savvy millennial seeking instant credit prequalification via mobile.",
+      "goals": [
+        "Get an instant eligibility check without harming credit score",
+        "Compare personalized card offers in‑app",
+        "Complete application in under 5 minutes"
+      ],
+      "frustrations": [
+        "Long manual forms and hard credit pulls",
+        "Static off‑the‑shelf disclosures",
+        "No alternative offers if initially declined"
+      ]
+    },
+    {
+      "name": "Riley, Credit Risk Manager",
+      "description": "Responsible for maintaining portfolio health while maximizing approvals.",
+      "goals": [
+        "Automate low‑risk decisions",
+        "Configure tier thresholds without code deployments",
+        "Generate audit‑ready logs for regulatory review"
+      ],
+      "frustrations": [
+        "Slow change cycles for rule updates",
+        "Opaque decision logic in legacy systems",
+        "Lack of real‑time monitoring on decision outcomes"
+      ]
+    }
+  ],
+  "solution": [
+    "Built a JSON‑schema driven eligibility gateway with preliminary filters (age, residency, blacklists).",
+    "Implemented bureau integrator adapters (soft/hard pulls) with circuit breakers and fallbacks.",
+    "Developed a rules‑driven Decision Engine that maps FICO + custom risk attributes to A–D tiers.",
+    "Created a CMS‑backed Offer Personalization Engine integrated with Docutech for real‑time disclosures.",
+    "Engineered a Cross‑Sell & Partner Routing service to present fallback credit products.",
+    "Extended NetOxygen LOS via idempotent REST APIs and webhook sync for issuance and manual underwriting.",
+    "Containerized microservices on AWS Fargate, with GitHub Actions CI/CD, Terraform IaC, Prometheus/Grafana monitoring."
+  ],
+  "results": [
+    "Approval rate improved from 23% to 42%",
+    "Average decision time: 12 seconds (P95 < 25s)",
+    "Abandonment rate fell from 62% to 43%",
+    "Cross‑sell recovery conversion: 38%",
+    "200K incremental accounts in 6 months",
+    "Onboarded 8 issuers with configurable rule sets"
+  ],
+  "featured": false
   },
   {
     "id": "genai-lending",
