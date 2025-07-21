@@ -156,41 +156,6 @@
   "featured": true
   },
   {
-    "id": "genai-lending",
-    "title": "GenAI Real Estate Lending",
-    "subtitle": "Smarter loan decisions using LLMs and dynamic borrower intelligence",
-    "tags": ["GenAI Integration", "Real Estate", "Credit Analysis"],
-    "duration": "4 months",
-    "team": "Product Manager, GenAI Engineer, Risk Analyst",
-    "outcome": "Boosted loan closure rates by 30%",
-    "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop",
-    "problem": "Legacy loan systems failed to account for nuanced borrower behavior and contextual risk factors.",
-    "research": [
-      "Evaluated loan applications with high default risk",
-      "Interviewed 15 loan underwriters on decision complexity",
-      "Benchmarked success of LLMs in legal/financial NLP"
-    ],
-    "personas": [
-      {
-        "name": "Rajesh, Loan Officer",
-        "description": "Assesses real estate borrowers and approves large loans",
-        "goals": ["Make faster, smarter decisions", "Ensure risk parity"],
-        "frustrations": ["Limited behavioral signals", "Manual reviews"]
-      }
-    ],
-    "solution": [
-      "ChatGPT-based risk profile summarizer",
-      "LangChain agent to validate borrower info and property trends",
-      "Creditworthiness scoring enhanced with market intelligence"
-    ],
-    "results": [
-      "30% more loan approvals with same default rate",
-      "25% decrease in manual underwriting time",
-      "Enhanced trust in GenAI models by risk committee"
-    ],
-    "featured": true
-  },
-  {
     "id": "ovis-crm",
     "title": "Ovis CRM for Fitness Coaches",
     "subtitle": "A lightweight CRM to power solopreneurs in the fitness industry",
