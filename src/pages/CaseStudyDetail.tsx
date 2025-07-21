@@ -167,24 +167,31 @@ const CaseStudyDetail = () => {
 
           {/* ✅ PDF IFrame if available */}
               {study.pdfSrc && (
-                <section>
-                  <div className="max-w-6xl mx-auto mb-16">
-                  <h2 className="text-3xl font-dm-sans font-extrabold mb-6">
-                 Solution <span className="text-gradient"> Walkthrough</span>
-              </h2>
-                  <div className="aspect-[4/3] rounded-lg overflow-hidden border border-muted shadow-md">
-                    <iframe
-                      src={study.pdfSrc + "#toolbar=0&navpanes=0&scrollbar=0"}
-                      width="100%"
-                      height="600"
-                      className="w-full h-full"
-                      title={`${study.title} Case Study PDF`}
-                    />
-                  </div>
-                </div> 
-                </section>
-                
-              )}
+  <section className="w-full">
+    <div className="w-full mb-16">
+      <h2 className="text-3xl font-dm-sans font-extrabold mb-6 text-center sm:text-left">
+        Solution <span className="text-gradient"> Walkthrough</span>
+      </h2>
+      <div className="w-full aspect-[8.5/11] rounded-lg overflow-hidden border border-muted shadow-md">
+        <iframe
+          src={`${study.pdfSrc}#toolbar=0&navpanes=0&scrollbar=0&view=fit`}
+          className="w-full h-full"
+          title={`${study.title} Case Study PDF`}
+        />
+        <iframe
+          src={`${study.pdfSrc}#toolbar=0&navpanes=0&scrollbar=0&view=fit`}
+          className="w-full h-full"
+          style={{
+            backgroundColor: "#ffffff", // Ensure iframe bg is white
+          }}
+          title={`${study.title} Case Study PDF`}
+        />
+      </div>
+      
+    </div>
+  </section>
+)}
+
 
           {study.solution && (
             <section>

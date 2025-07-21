@@ -84,7 +84,7 @@
   },
   {
   "id": "credit-card-origination-platform",
-  "title": "Case Study: Credit Card Origination Platform – End-to-End Flow",
+  "title": "Case Study: Credit Card Origination Platform",
   "pdfSrc": "Credit Card Origination Platform.pdf",
   "subtitle": "Building a modular, real-time credit card origination solution on top of legacy LOS",
   "tags": [
@@ -153,7 +153,7 @@
     "200K incremental accounts in 6 months",
     "Onboarded 8 issuers with configurable rule sets"
   ],
-  "featured": false
+  "featured": true
   },
   {
     "id": "genai-lending",

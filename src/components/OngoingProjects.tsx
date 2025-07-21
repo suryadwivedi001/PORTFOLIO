@@ -37,15 +37,6 @@ const OngoingProjects = ({ showOnHomepage = false, limit }: OngoingProjectsProps
       featured: true
     },
     {
-      id: 'streetkhana-discovery',
-      title: 'StreetKhana Discovery App',
-      shortDescription: 'Food discovery app connecting users with local street vendors.',
-      description: 'A comprehensive food discovery platform that connects users with local street vendors through AI-powered recommendations. The concept includes location-based services, vendor profiles, real-time availability, and user reviews.\n\nKey Features:\n• AI-powered food recommendations\n• Location-based vendor discovery\n• Real-time vendor availability\n• User review and rating system\n• Vendor onboarding flow\n• Payment integration concept',
-      tools: ['React Native', 'AI/ML', 'Location Services', 'Payment Integration'],
-      status: 'concept',
-      featured: false
-    },
-    {
       id: 'ai-pm-toolkit',
       title: 'AI PM Toolkit in Notion',
       shortDescription: 'Comprehensive toolkit for AI product managers built in Notion.',
