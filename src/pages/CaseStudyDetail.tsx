@@ -89,7 +89,10 @@ const CaseStudyDetail = () => {
               <h2 className="text-3xl font-dm-sans font-extrabold mb-6">
                 Project <span className="text-gradient">Overview</span>
               </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed">{study.overview}</p>
+              <div
+        className="prose lg:prose-lg text-muted-foreground leading-relaxed"
+        dangerouslySetInnerHTML={{ __html: study.overview }}
+      />
             </section>
           )}
 
@@ -100,7 +103,10 @@ const CaseStudyDetail = () => {
               </h2>
               <Card className="minimal-shadow">
                 <CardContent className="p-8">
-                  <p className="text-lg leading-relaxed">{study.problem}</p>
+                  <div
+            className="prose lg:prose-lg leading-relaxed"
+            dangerouslySetInnerHTML={{ __html: study.problem }}
+          />
                 </CardContent>
               </Card>
             </section>
@@ -193,27 +199,30 @@ const CaseStudyDetail = () => {
 )}
 
 
-          {study.solution && (
-            <section>
-              <h2 className="text-3xl font-dm-sans font-extrabold mb-6">
-                The <span className="text-gradient">Solution</span>
-              </h2>
-              <Card className="minimal-shadow">
-                <CardContent className="p-8">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    {study.solution.map((item, index) => (
-                      <div key={index} className="flex items-start">
-                        <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
-                          <span className="text-primary-foreground font-bold text-sm">{index + 1}</span>
-                        </div>
-                        <p>{item}</p>
-                      </div>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-            </section>
-          )}
+{study.solution && (
+  <section>
+    <h2 className="text-3xl font-dm-sans font-extrabold mb-6">
+      The <span className="text-gradient">Solution</span>
+    </h2>
+    <Card className="minimal-shadow">
+      <CardContent className="p-8">
+        <div className="grid">
+          {study.solution.map((item, index) => (
+            <div
+              key={index}
+              className="w-full p-4 bg-muted/40 rounded-xl"
+            >
+              <div
+                className="prose lg:prose-lg max-w-none leading-relaxed"
+                dangerouslySetInnerHTML={{ __html: item }}
+              />
+            </div>
+          ))}
+        </div>
+      </CardContent>
+    </Card>
+  </section>
+)}
 
           {study.results && (
             <section>

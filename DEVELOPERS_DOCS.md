@@ -43,6 +43,9 @@ src/
 │   ├── Layout.tsx       # Page layout wrapper
 │   ├── HeroSection.tsx  # Homepage hero
 │   └── FeaturedCaseStudies.tsx
+├── data/
+|   |- blogs.json
+|   |- casestudies.json
 ├── pages/               # Route components
 │   ├── Index.tsx        # Homepage
 │   ├── About.tsx        # About page
@@ -50,6 +53,7 @@ src/
 │   ├── CaseStudies.tsx  # Case studies listing
 │   ├── CaseStudyDetail.tsx # Individual case study
 │   ├── Blog.tsx         # Blog listing
+│   ├── BlogDetails.tsx         # Blog listing
 │   ├── Contact.tsx      # Contact form
 │   └── NotFound.tsx     # 404 page
 ├── lib/                 # Utility functions
@@ -83,22 +87,6 @@ src/
 - Color contrast compliance
 - Screen reader friendly
 
-## Content Management
-
-### Case Studies
-Currently includes 6 case studies:
-1. **StreetKhana** - Food discovery app (PDF-based)
-2. **Hinge App Ratings Recovery** - UX optimization (PDF-based)  
-3. **BookMyShow Ticketing UX** - Conversion optimization (PDF-based)
-4. **AI Insurance Claims Assistant** - AI automation
-5. **Zero-Code Lead Scoring Engine** - SaaS optimization
-6. **Generative UI Prototyping Tool** - AI-powered design
-
-### Blog Articles
-Pre-populated with 3 technical articles:
-1. "How to Use Agile & Scrum in AI Product Management"
-2. "The Real Reason Your AI MVP Fails — And How to Fix It"  
-3. "From Prompt to Product: How I Built AI Agents Without Code"
 
 ### Contact Information
 - Email: surya.dwivedi01@outlook.com
@@ -143,50 +131,7 @@ npm run lint
 ### Environment Variables
 Currently no environment variables required for frontend-only functionality.
 
-## Future Backend Integration
-
-### CMS Requirements
-For full CMS functionality, integrate with:
-- **Supabase** (recommended) - Database + Auth + File Storage
-- **Strapi** - Headless CMS
-- **Sanity** - Content management
-- **Firebase** - Google's backend platform
-
-### Admin Features Needed
-1. **Authentication**: Admin login (surya.dwivedi01@outlook.com)
-2. **Case Study Management**: 
-   - PDF upload and processing
-   - Rich text editor for content
-   - Image upload and management
-   - Draft/published status
-3. **Blog Management**:
-   - Markdown/WYSIWYG editor
-   - Tags and categorization
-   - SEO metadata editing
-4. **Resume Management**:
-   - PDF upload/replacement
-   - Editable sections
-5. **Contact Form**:
-   - Form submission handling
-   - Email notifications
-
-### API Endpoints (Future)
-```
-GET /api/case-studies
-GET /api/case-studies/:id
-POST /api/case-studies (admin)
-PUT /api/case-studies/:id (admin)
-DELETE /api/case-studies/:id (admin)
-
-GET /api/blog-posts
-GET /api/blog-posts/:id
-POST /api/blog-posts (admin)
-PUT /api/blog-posts/:id (admin)
-
-POST /api/contact-form
-POST /api/auth/login
-GET /api/auth/me
-```
+## Future Backend Integration 
 
 ## SEO Optimization
 
