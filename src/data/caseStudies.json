@@ -11,7 +11,7 @@
     "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&h=600&fit=crop",
     "overview": "StreetKhana aimed to solve the discovery problem for street food enthusiasts by creating an AI-powered platform that connects users with local vendors based on preferences, location, and real-time availability.",
     "problem": "India is home to an estimated 2 million street food vendors, offering a rich and diverse culinary experience across cities and towns. Despite the widespread love for street food, people often struggle to discover the best and most hygienic options nearby—especially when craving local specialties or traveling to a new city. This highlights a significant discovery gap in the street food ecosystem. To bridge this gap, we envision building a street food finder app that enables users to seamlessly explore, locate, and engage with top-rated street vendors based on their location, preferences, and real-time availability. To develop an outstanding product that street food lovers genuinely value, we must first understand the market landscape—mapping key players, vendors, and competitors, and assessing current solutions. From there, we will form hypotheses around the ideal product experience, conduct both user and competitor research to validate assumptions, and identify distinct user segments along with their pain points. Based on user personas, we’ll design and prioritize features, define the MVP scope, outline a high-level system design, and create wireframes with intuitive UI/UX. We will map the end-to-end user journey, define measurable success metrics including a north star and supporting KPIs, and structure a viable monetization plan. Finally, we’ll identify potential risks—such as vendor onboarding challenges or user trust—and propose mitigation strategies to ensure the long-term success of the product.",
-    "featured": false
+    "featured": true
   },
   {
     "id":"hinge-ratings",
@@ -187,6 +187,6 @@
       "Reduced churn by 35%",
       "Received interest from local gyms for white-labeling"
     ],
-    "featured": false
+    "featured": true
   }
 ]
