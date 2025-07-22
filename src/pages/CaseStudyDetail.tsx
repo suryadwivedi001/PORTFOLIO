@@ -201,9 +201,6 @@ const CaseStudyDetail = () => {
 
 {study.solution && (
   <section>
-    <h2 className="text-3xl font-dm-sans font-extrabold mb-6">
-      The <span className="text-gradient">Solution</span>
-    </h2>
     <Card className="minimal-shadow">
       <CardContent className="p-8">
         <div className="grid">
