@@ -25,16 +25,6 @@ const About = () => {
                     With 4 years of experience as a Product Manager at Wipro Gallagher Solutions, I specialize in leveraging Generative AI to build impactful B2B SaaS products in the lending domain. My passion lies in bridging cutting-edge technology with strategic business outcomes.
                   </p>
                 </div>
-                <a href="resume.pdf" download="Surya_Prakash_Dwivedi_Resume.pdf">
-                  <Button 
-                    size="lg" 
-                    className="border-2 border-oxford-blue bg-oxford-blue text-white hover:bg-oxford-blue/90 font-medium rounded-lg px-8 py-3 transition-all duration-200 uppercase tracking-wide shadow-sm min-h-[44px] min-w-[44px]"
-                    aria-label="Download Surya's resume as PDF"
-                  >
-                    <Download className="mr-2 h-4 w-4" aria-hidden="true" />
-                    Download Resume
-                  </Button>
-                </a>
               </div>
               
               {/* Right Column - Image */}
@@ -42,13 +32,10 @@ const About = () => {
                 <div className="relative">
                   <div className="w-80 h-80 rounded-2xl overflow-hidden shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-300">
                     <img 
-                      src="/surya_image.png" 
+                      src="/PORTFOLIO/surya_image.png" 
                       alt="Surya Prakash playing guitar" 
                       className="w-full h-full object-cover"
                     />
-                  </div>
-                  <div className="absolute -bottom-4 -right-4 bg-oxford-blue text-white p-4 rounded-xl shadow-lg">
-                    <p className="text-sm font-medium">Creativity meets Strategy</p>
                   </div>
                 </div>
               </div>
@@ -56,8 +43,8 @@ const About = () => {
           </div>
 
           {/* Philosophy Section */}
-<div className="max-w-6xl mx-auto mb-16">
-  <Card className="max-w-6xl mx-auto mb-16">
+<div className="max-w-6xl mx-auto my-20 px-4">
+  <Card className="bg-white text-black p-10 rounded-xl shadow-md">
     <div className="text-center space-y-4">
       <h2 className="text-3xl font-bold font-playfair">My Product Philosophy</h2>
       <p className="text-xl font-inter italic">
@@ -280,7 +267,21 @@ const About = () => {
                 </div>
               </div>
             </Card>
+            <div className="flex justify-center mt-6">
+  <a href="resume.pdf" download="Surya_Prakash_Dwivedi_Resume.pdf">
+    <Button 
+      size="lg" 
+      className="border-2 border-oxford-blue bg-oxford-blue text-white hover:bg-oxford-blue/90 font-medium rounded-lg px-8 py-3 transition-all duration-200 uppercase tracking-wide shadow-sm min-h-[44px] min-w-[44px]"
+      aria-label="Download Surya's resume as PDF"
+    >
+      <Download className="mr-2 h-4 w-4" aria-hidden="true" />
+      Download Resume
+    </Button>
+  </a>
+</div>
+
           </div>
+          
 
           {/* Contact CTA - Preserved as requested */}
           <div className="max-w-2xl mx-auto text-center">
@@ -307,6 +308,7 @@ const About = () => {
                 >
                   <a href="tel:+918847313113">CALL NOW</a>
                 </Button>
+
               </div>
             </div>
           </div>
