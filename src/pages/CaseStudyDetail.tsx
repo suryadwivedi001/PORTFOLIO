@@ -188,7 +188,7 @@ const CaseStudyDetail = () => {
           src={`${study.pdfSrc}#toolbar=0&navpanes=0&scrollbar=0&view=fit`}
           className="w-full h-full"
           style={{
-            backgroundColor: "#ffffff", // Ensure iframe bg is white
+            backgroundColor: "#f8fafc", // Ensure iframe bg is white
           }}
           title={`${study.title} Case Study PDF`}
         />
@@ -201,6 +201,9 @@ const CaseStudyDetail = () => {
 
 {study.solution && (
   <section>
+    <h2 className="text-3xl font-dm-sans font-extrabold mb-6">
+      The <span className="text-gradient">Solution</span>
+    </h2>
     <Card className="minimal-shadow">
       <CardContent className="p-8">
         <div className="grid">

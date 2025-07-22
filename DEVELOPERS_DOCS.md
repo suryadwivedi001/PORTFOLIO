@@ -16,7 +16,7 @@ A modern, responsive portfolio website for Surya Prakash Dhar Dwivedi, showcasin
 
 ### Color Palette
 - **Primary**: Black (#000000)
-- **Background**: White (#FFFFFF)  
+- **Background**: White (#f8fafc)  
 - **Muted**: Warm Gray (#EAEAEA)
 - **Text**: Jet Black for headings, gray variants for body text
 

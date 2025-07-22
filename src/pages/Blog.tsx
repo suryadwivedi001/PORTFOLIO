@@ -147,33 +147,6 @@ const Blog = () => {
 
         {/* Newsletter Signup */}
         <div className="text-center">
-          <Card className="max-w-2xl mx-auto bg-white border border-light-grey-border shadow-sm rounded-xl">
-            <CardContent className="p-8">
-              <h2
-                className="font-inter font-bold mb-4 text-charcoal-grey"
-                style={{ fontSize: "28px", lineHeight: "36px" }}
-              >
-                Stay <span className="text-gradient">Updated</span>
-              </h2>
-              <p
-                className="text-charcoal-grey mb-6 font-inter"
-                style={{ lineHeight: "1.5" }}
-              >
-                Get the latest insights on AI transformation and B2B SaaS
-                product strategy delivered to your inbox.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  className="flex-1 px-4 border border-light-grey-border rounded-md bg-white text-charcoal-grey font-inter min-h-[44px]"
-                />
-                <Button className="bg-oxford-blue text-white hover:bg-oxford-blue/90 font-medium rounded-lg px-8 py-3 transition-all duration-200 uppercase tracking-wide shadow-sm min-h-[44px] min-w-[44px]">
-                  Subscribe
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
         </div>
       </div>
     </div>
