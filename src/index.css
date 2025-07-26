@@ -7,22 +7,22 @@
 @layer base {
   :root {
     --background: 0 0% 100%; /* #f8fafc */
-    --foreground: 0 0% 18%; /* #65758b - Charcoal Grey */
+    --foreground: 0 0% 18%; /* #333333 - Charcoal Grey */
 
     --card: 0 0% 100%; /* #f8fafc */
-    --card-foreground: 0 0% 18%; /* #65758b */
+    --card-foreground: 0 0% 18%; /* #333333 */
 
     --popover: 0 0% 100%; /* #f8fafc */
-    --popover-foreground: 0 0% 18%; /* #65758b */
+    --popover-foreground: 0 0% 18%; /* #333333 */
 
-    --primary: 221 51% 16%; /* #1147bb - Oxford Blue */
+    --primary: 221 51% 16%; /* #2C3E50	 - Oxford Blue */
     --primary-foreground: 0 0% 100%; /* #f8fafc */
 
-    --secondary: 45 29% 97%; /* #e6f0fa - Ivory White */
-    --secondary-foreground: 0 0% 18%; /* #65758b */
+    --secondary: 45 29% 97%; /* #F5F7FA - Ivory White */
+    --secondary-foreground: 0 0% 18%; /* #333333 */
 
     --muted: 0 0% 97%; /* #F7F7F7 - Light Grey */
-    --muted-foreground: 0 0% 18%; /* #65758b */
+    --muted-foreground: 0 0% 18%; /* #333333 */
 
     --accent: 250 60% 39%; /* #3C28A0 - Deep Blue */
     --accent-foreground: 0 0% 100%; /* #f8fafc */
@@ -32,28 +32,28 @@
 
     --border: 50 19% 81%; /* #D8D5C6 - Light Grey Border */
     --input: 50 19% 81%; /* #D8D5C6 */
-    --ring: 221 51% 16%; /* #1147bb - Oxford Blue */
+    --ring: 221 51% 16%; /* #2C3E50	 - Oxford Blue */
 
     --radius: 0.75rem; /* 12px */
 
     --sidebar-background: 0 0% 100%; /* #f8fafc */
-    --sidebar-foreground: 0 0% 18%; /* #65758b */
-    --sidebar-primary: 221 51% 16%; /* #1147bb */
+    --sidebar-foreground: 0 0% 18%; /* #333333 */
+    --sidebar-primary: 221 51% 16%; /* #2C3E50	 */
     --sidebar-primary-foreground: 0 0% 100%; /* #f8fafc */
-    --sidebar-accent: 221 51% 16%; /* #1147bb */
+    --sidebar-accent: 221 51% 16%; /* #2C3E50	 */
     --sidebar-accent-foreground: 0 0% 100%; /* #f8fafc */
     --sidebar-border: 50 19% 81%; /* #D8D5C6 */
-    --sidebar-ring: 221 51% 16%; /* #1147bb */
+    --sidebar-ring: 221 51% 16%; /* #2C3E50	 */
   }
 
   .dark {
-    --background: 221 51% 16%; /* #1147bb */
+    --background: 221 51% 16%; /* #2C3E50	 */
     --foreground: 0 0% 100%; /* #f8fafc */
     --card: 240 4% 16%; /* #27272A */
     --card-foreground: 0 0% 100%; /* #f8fafc */
     --popover: 240 4% 16%; /* #27272A */
     --popover-foreground: 0 0% 100%; /* #f8fafc */
-    --primary: 221 51% 16%; /* #1147bb */
+    --primary: 221 51% 16%; /* #2C3E50	 */
     --primary-foreground: 0 0% 100%; /* #f8fafc */
     --secondary: 240 4% 16%; /* #27272A */
     --secondary-foreground: 0 0% 100%; /* #f8fafc */
@@ -65,7 +65,7 @@
     --destructive-foreground: 0 0% 100%; /* #f8fafc */
     --border: 217 19% 27%; /* #374151 */
     --input: 217 19% 27%; /* #374151 */
-    --ring: 221 51% 16%; /* #1147bb */
+    --ring: 221 51% 16%; /* #2C3E50	 */
   }
 }
 
@@ -95,7 +95,7 @@
     @apply text-5xl leading-tight font-bold;
     font-family: 'Playfair Display', serif;
     font-size: 48px;
-    color: #1147bb;
+    color: #2C3E50	;
   }
 
   h2 {
@@ -108,7 +108,7 @@
   h3 {
     @apply text-3xl leading-tight font-semibold;
     font-family: 'Inter', sans-serif;
-    color: #65758b;
+    color: #333333;
   }
 
   p, body {
@@ -116,14 +116,14 @@
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    color: #65758b;
+    color: #333333;
   }
 
   small, .text-small {
     @apply text-sm leading-normal font-medium;
     font-family: 'Inter', sans-serif;
     font-size: 14px;
-    color: #65758b;
+    color: #333333;
     text-transform: uppercase;
     letter-spacing: 0.05em;
   }
@@ -132,7 +132,7 @@
   *:focus-visible {
     @apply outline-none ring-2 ring-oxford-blue ring-offset-2 ring-offset-white;
     box-shadow: 0 0 0 3px rgba(20, 33, 61, 0.3) !important;
-    border-color: #1147bb !important;
+    border-color: #2C3E50	 !important;
   }
 
   button:focus-visible,
@@ -141,7 +141,7 @@
   textarea:focus-visible,
   select:focus-visible {
     @apply outline-none ring-2 ring-oxford-blue ring-offset-2;
-    border-color: #1147bb !important;
+    border-color: #2C3E50	 !important;
     box-shadow: 0 0 0 3px rgba(20, 33, 61, 0.3) !important;
   }
 
@@ -149,7 +149,7 @@
   input:focus,
   textarea:focus,
   select:focus {
-    border-color: #1147bb !important;
+    border-color: #2C3E50	 !important;
     box-shadow: 0 0 0 3px rgba(20, 33, 61, 0.3) !important;
     outline: none !important;
   }
@@ -213,7 +213,7 @@
   }
 
   .brand-input:focus {
-    border-color: #1147bb !important;
+    border-color: #2C3E50	 !important;
     box-shadow: 0 0 0 3px rgba(20, 33, 61, 0.3) !important;
   }
 
@@ -229,7 +229,7 @@
   /* Navigation active state */
   .nav-active {
     @apply border-b-2 border-burnt-umber font-semibold;
-    color: #1147bb;
+    color: #2C3E50	;
   }
 
   /* Section spacing consistency */
@@ -248,20 +248,20 @@
   }
 
   /* Custom color utilities */
-  .text-oxford-blue { color: #1147bb; }
+  .text-oxford-blue { color: #2C3E50	; }
   .text-deep-blue { color: #3C28A0; }
-  .text-charcoal-grey { color: #65758b; }
-  .text-burnt-umber { color: #1147bb; }
+  .text-charcoal-grey { color: #333333; }
+  .text-burnt-umber { color: #2C3E50	; }
   
-  .bg-oxford-blue { background-color: #1147bb; }
+  .bg-oxford-blue { background-color: #2C3E50	; }
   .bg-deep-blue { background-color: #3C28A0; }
-  .bg-ivory-white { background-color: #e6f0fa; }
+  .bg-ivory-white { background-color: #F5F7FA; }
   .bg-light-grey { background-color: #F7F7F7; }
-  .bg-burnt-umber { background-color: #1147bb; }
+  .bg-burnt-umber { background-color: #2C3E50	; }
   
   .border-light-grey-border { border-color: #D8D5C6; }
-  .border-burnt-umber { border-color: #1147bb; }
-  .border-oxford-blue { border-color: #1147bb; }
+  .border-burnt-umber { border-color: #2C3E50	; }
+  .border-oxford-blue { border-color: #2C3E50	; }
 
   /* 8pt Grid System */
   .spacing-1 { @apply p-2; }
