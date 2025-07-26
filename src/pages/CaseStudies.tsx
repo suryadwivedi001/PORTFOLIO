@@ -18,17 +18,15 @@ interface AllCaseStudies {
   image: string;
   overview: string;
   problem: string;
-  research: string[];
-  personas: {
-    name: string;
-    description: string;
-    goals: string[];
-    frustrations: string[];
-  }[];
-  solution: string[];
-  results: string[];
   featured: boolean;
-}
+
+  pdfSrc?: string; // For PDF-only case studies
+  notionUrl?: string; // For Notion embedded walkthrough
+
+  research?: string[]; // Optional breakdown section
+  solution?: string[]; // Optional bullet/HTML solutions
+  results?: string[]; // Optional results/outcomes
+};
 
 const CaseStudies = () => {
   const [selectedStudy, setSelectedStudy] = useState<AllCaseStudies | null>(null);
