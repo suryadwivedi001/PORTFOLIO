@@ -132,8 +132,6 @@ const CaseStudyDetail: React.FC = () => {
             </section>
           )}
 
-          {/* Personas etc... remain unchanged */}
-
           {/* Solution: Responsive iFrames and HTML fallback */}
           {study.notionUrl ? (
             <section>
@@ -188,15 +186,12 @@ const CaseStudyDetail: React.FC = () => {
             </section>
           ) : null}
 
-          {/* Results unchanged */}
-
           {/* Final CTA */}
           <section className="text-center">
             <Card className="glass-card">
               <CardContent className="p-6 sm:p-8">
                 <h2 className="text-2xl sm:text-3xl font-dm-sans font-extrabold mb-4">
-                  Interested in{' '}
-                  <span className="text-gradient">Similar Results?</span>
+                  Interested in <span className="text-gradient">Similar Results?</span>
                 </h2>
                 <p className="text-sm sm:text-base text-muted-foreground mb-6 max-w-2xl mx-auto">
                   Let&apos;s discuss how I can help transform your product with
