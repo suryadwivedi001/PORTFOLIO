@@ -1,74 +1,5 @@
 [
   {
-    "id":"hinge-ratings",
-    "title": "Hinge App Store Ratings Recovery",
-    "pdfSrc": "Hinge_Case_Study.pdf",
-    "subtitle": "Strategic UX intervention to recover from declining app store ratings",
-    "tags": ["UX Strategy", "App Store Optimization", "Growth", "A/B Testing"],
-    "duration": "2 months",
-    "team": "Product Manager, UX Designer, Data Analyst",
-    "outcome": "Improved ratings from 2.8 to 4.2 stars",
-    "image": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=1200&h=600&fit=crop",
-    "overview": "Hinge faced declining app store ratings due to user experience issues in their onboarding flow and matching algorithm. This case study details the systematic approach to identifying and resolving core user friction points.",
-    "problem": "Hinge app ratings had declined to 2.8 stars with users complaining about poor matching quality, complicated onboarding, and lack of meaningful connections. The declining ratings were affecting organic discovery and user acquisition.",
-    "featured": false
-  },
-  {
-    "id": "bookmyshow",
-    "title": "BookMyShow Ticketing UX Redesign",
-    "pdfSrc": "BookMyShow_CaseStudy.pdf",
-    "subtitle": "Optimizing high-demand event booking flow for better conversion",
-    "tags": ["UX Design", "Conversion Optimization", "High Traffic", "Performance"],
-    "duration": "4 months",
-    "team": "Product Manager, 2 UX Designers, 3 Developers",
-    "outcome": "Reduced booking abandonment by 40%",
-    "image": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=1200&h=600&fit=crop",
-    "overview": "BookMyShow needed to optimize their ticket booking flow for high-demand events where server load and user urgency created friction points that led to booking abandonment and user frustration.",
-    "problem": "During high-demand events, BookMyShow experienced significant booking abandonment due to slow loading times, complex navigation, and unclear seat availability. Users were frustrated with the multi-step process during peak traffic periods.",
-    "featured": false
-  },
-  {
-    "id": "generative-ui-prototyping",
-    "title": "Generative UI Prototyping Tool",
-    "subtitle": "AI-powered wireframe generation for rapid product development",
-    "tags": ["Generative UI", "OpenAI", "Figma Plugin", "Prototyping", "Design Automation"],
-    "duration": "4 months",
-    "team": "Product Manager, Frontend Developer, AI Engineer, UX Designer",
-    "outcome": "Enabled 10x faster prototype creation",
-    "image": "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=1200&h=600&fit=crop",
-    "overview": "Created an AI-powered prototyping tool that allows early-stage founders and product managers to generate professional wireframes and UI mockups through natural language prompts, dramatically reducing the time from idea to testable prototype.",
-    "problem": "Early-stage founders and non-technical product managers struggled to quickly visualize and test their product ideas. Traditional prototyping tools required design skills and significant time investment, creating a barrier between concept and validation.",
-    "research": [
-      "Interviewed 40 early-stage founders about prototyping challenges",
-      "Analyzed time spent on initial design iterations vs. development",
-      "Studied existing no-code design tools and their limitations",
-      "researched AI-generated design capabilities and best practices"
-    ],
-    "personas": [
-      {
-        "name": "Emma, Solo Founder",
-        "description": "Non-technical founder with limited design budget",
-        "goals": ["Validate ideas quickly", "Create investor-ready mockups", "Minimize upfront costs"],
-        "frustrations": ["Steep learning curve for design tools", "Expensive freelancers", "Slow iteration cycles"]
-      }
-    ],
-    "solution": [
-      "Natural language processing to interpret design requirements",
-      "OpenAI GPT-4 integration for intelligent layout generation",
-      "Figma plugin for seamless design workflow integration",
-      "Component library with modern UI patterns and Tailwind CSS",
-      "Version control and collaboration features for team feedback"
-    ],
-    "results": [
-      "10x faster prototype creation (2 hours vs. 20 hours)",
-      "85% reduction in design costs for early-stage startups",
-      "92% user satisfaction score in beta testing",
-      "1,200+ prototypes generated in first 3 months",
-      "Featured in 5 major product design publications"
-    ],
-    "featured": false
-  },
-  {
   "id": "credit-card-origination-platform",
   "title": "Case Study: Credit Card Origination Platform",
     "subtitle": "Building a modular, real-time credit card origination solution on top of legacy LOS",
@@ -85,6 +16,24 @@
   "outcome": "42% approval rate, sub‑15‑second decisions, 19% abandonment reduction, cross sell of alternative cards increased conversion",
   "image": "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=1200&h=600&fit=crop",
 
+  "featured": true
+  },
+  {
+  "id": "outcry-hyperlocal-cafe-delivery",
+  "title": "Case Study: OutCry Hyperlocal Cafe-Delivery Platform",
+  "subtitle": "Revolutionizing urban convenience with 10-minute delivery of essentials and cafe favorites within gated societies",
+  "tags": [
+  "Quick Commerce",
+  "Hyperlocal Delivery",
+  "Cafe Integration",
+  "Last Mile Optimization",
+  "Community Engagement"
+  ],
+  "notionUrl": "https://shaggy-apples-brake.notaku.site",
+  "duration": "6 months (pilot phase)",
+  "team": "Founder, Store Manager, Baristas, Delivery Riders, Technology Lead, Marketing Specialist, Compliance Officer",
+  "outcome": "Projected 45.5% gross margin, 420+ daily orders, 10-minute delivery promise, strong community adoption, scalable micro-node model",
+  "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200&h=600&fit=crop",
   "featured": true
   },
   {
