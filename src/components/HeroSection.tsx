@@ -16,10 +16,7 @@ const HeroSection = () => {
               Product Manager
             </h1>
             <p className="text-xl md:text-2xl text-charcoal-grey mb-8 max-w-3xl mx-auto font-inter" style={{ lineHeight: '1.5' }}>
-              AI-focused Product Manager with expertise in B2B SaaS and lending technology products. 
-              Specialized in Generative AI integration, workflow automation, and driving 30%+ business growth 
-              through strategic product development at Wipro Gallagher Solutions.
-            </p>
+Product Manager with 4+ years’ experience building and launching enterprise SaaS products at Wipro. Skilled across the product lifecycle—ideation, research, roadmap planning, and go-to-market execution. Now transitioning into B2C through self-initiated projects in consumer gaming and hyperlocal delivery. Built a fitness CRM in college as part of a startup. Passionate about solving real problems with data-driven decisions, user-first design, and rapid iteration.            </p>
           </div>
 
           {/* CTA Buttons */}
