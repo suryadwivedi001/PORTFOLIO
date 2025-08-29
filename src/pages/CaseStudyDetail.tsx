@@ -138,7 +138,7 @@ const CaseStudyDetail: React.FC = () => {
               <h2 className="text-2xl sm:text-3xl font-dm-sans font-extrabold mb-6">
                 Solution <span className="text-gradient">Walkthrough</span>
               </h2>
-              <div className="w-full h-[60vh] sm:h-[80vh] rounded-lg overflow-hidden border border-muted shadow-md">
+              <div className="w-full h-[60vh] sm:h-[200vh] rounded-lg overflow-hidden border border-muted shadow-md">
                 <iframe
                   src={study.notionUrl}
                   className="w-full h-full"
